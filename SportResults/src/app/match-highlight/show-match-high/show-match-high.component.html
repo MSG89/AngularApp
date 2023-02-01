@@ -1,0 +1,17 @@
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Home team</th>
+            <th>Away team</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataItem of MatchList">
+            <td>{{dataItem.HomeTeam}}</td>
+            <td>{{dataItem.AwayTeam}}</td>
+            <td>{{dataItem.TotalScore}}</td>
+        </tr>
+    </tbody>
+</table>

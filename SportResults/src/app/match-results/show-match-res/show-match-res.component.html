@@ -1,0 +1,18 @@
+
+<table id='teamsTable' class="table table-striped">
+    <thead>
+        <tr>
+            <th onclick="sortTable(0)">Home team</th>
+            <th onclick="sortTable(1)">Away team</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataItem of MatchList">
+            <td>{{dataItem.HomeTeam}}</td>
+            <td>{{dataItem.AwayTeam}}</td>
+            <td>{{dataItem.HomeTeamScore}}:{{dataItem.AwayTeamScore}}</td>
+        </tr>
+    </tbody>
+</table>
+

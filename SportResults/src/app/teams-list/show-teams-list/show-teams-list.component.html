@@ -1,0 +1,13 @@
+
+<table id='teamsTable' class="table table-striped">
+    <thead>
+        <tr>
+            <th onclick="sortTable(0)">Team name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataItem of TeamNamesList">
+            <td>{{dataItem.TeamName}}</td>
+        </tr>
+    </tbody>
+</table>

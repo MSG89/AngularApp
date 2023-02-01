@@ -1,0 +1,15 @@
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Top 5 offensive teams</th>
+            <th>Total points scored</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataItem of MatchList">
+            <td>{{dataItem.TeamName}}</td>
+            <td>{{dataItem.TotalScore}}</td>
+        </tr>
+    </tbody>
+</table>
